@@ -179,10 +179,67 @@
 
 #why{
     width: 70%;
-    height: 500px;
     background-color: #181a20;
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     left: 250px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    height: 1000px;
+}
+
+#el1{
+    width: 144.5%;
+    height: 1000px;
+    overflow: hidden;
+    position: absolute;
+}
+
+#whyP{
+    color: #e88f1c;
+    font-family: "GreatLeaderHollow";
+    font-size: 100px;
+    margin: 0%;
+    position: relative;
+    white-space: nowrap;
+    bottom: 20px;
+}
+
+.whys{
+    border-bottom: 2px solid #e88f1c;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+.whytext{
+    text-align: center;
+    color: #e88f1c;
+    font-family: "GreatLeader";
+    font-size: 34px;
+    position: relative;
+    right: 0px;
+    z-index: 0;
+}
+
+#hm2-1{
+    width: 40%;
+    z-index: 3;
+    position: relative;
+    right: 320px;
+    bottom: 50px;
+}
+
+#hm2-2{
+    width: 40%;
+    z-index: 3;
+    position: relative;
+    left: 650px;
+    top: 150px;
 }
