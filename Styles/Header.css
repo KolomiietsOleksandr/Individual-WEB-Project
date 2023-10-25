@@ -63,11 +63,11 @@
         font-size: 32px;
         background: none;
         border: 1px solid #e88f1c;
-        border-radius: 28px;
         -webkit-border-radius: 28px;
         -moz-border-radius: 28px;
         -ms-border-radius: 28px;
         -o-border-radius: 28px;
+        border-radius: 28px;
         position: relative;
         left: 200px;
         top: 30px;
@@ -93,22 +93,22 @@
         cursor: pointer;
     }
 
-    #headbasket, #headper{
+    #headbasket{
         color: #e88f1c;
         font-size: 32px;
         border: 2px solid #e88f1c;
-        border-radius: 12px;
         border-bottom: 10px;
         padding: 10px 10px;
         background: none;
         border: none;
         position: relative;
-        left: 350px;
+        left: 400px;
         margin-left: 10px;
         -webkit-border-radius: 12px;
         -moz-border-radius: 12px;
         -ms-border-radius: 12px;
         -o-border-radius: 12px;
+        border-radius: 12px;
         cursor: pointer;
     }
 

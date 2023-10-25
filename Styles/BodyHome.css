@@ -24,9 +24,12 @@
 
 #body {
     background-image: url('Photos/Beer.png');
-    height: 2000px;
+    height:50px;
 }
 
+#Homepages{
+    display: block;
+}
 
 #WelcomeDiv{
     display: flex;
@@ -34,11 +37,11 @@
     background-color: #181a20;
     width: 101.1%;
     margin-left: -10px;
-    border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    border-radius: 50px;
     position: relative;
     bottom: 230px;
     z-index: -2;
@@ -77,11 +80,11 @@
     flex-direction: column;
     position: relative;
     left: 250px;
-    border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    border-radius: 50px;
     height: 1000px;
 }
 
