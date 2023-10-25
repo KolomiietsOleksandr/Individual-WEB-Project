@@ -1,0 +1,96 @@
+#footer{
+    height: 600px;
+    width: 101%;
+    display: flex;
+    flex-direction: row;
+    background-color: #181a20;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    right: 8px;
+    margin: 0;
+    top: 20px;
+}
+
+#OurLocation{
+    position: relative;
+    left: 100px;
+    bottom: -10px;
+    color: #e88f1c;
+    font-family: "GreatLeaderLight";
+    font-size: 74px;
+    margin: 0;
+}
+
+#map{
+    width: 600px;
+    height: 450px;
+    border:0;
+    position:relative;
+    left:100px;
+    margin: 0;
+    top: 25px;
+}
+
+#Phones, #Adress, #Email{
+    color:#e88f1c;
+    font-size: 24px;
+    position: relative;
+    left: 150px;
+    font-family: "GreatLeaderLight";
+    line-height: 50px;
+    letter-spacing: 0.1em;
+}
+
+#Icons{
+    color: #e88f1c;
+    font-size: 34px;
+    position: relative;
+    left: 150px;
+    letter-spacing: 0.5em;
+}
+
+#Contacts{
+    position: relative;
+    top: 150px;
+    margin: 0;
+    height: 300px;
+}
+
+#flood{
+    position: relative;
+    left: 250px;
+    top: 125px;
+    height: 300px;
+}
+
+.flood-text{
+    color:#e88f1c;
+    font-size: 24px;
+    position: relative;
+    font-family: "GreatLeaderLight";
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 23px;
+}
+
+.flood-text:active{
+    color: #935b12;
+}
+
+.icons{
+    border: none;
+    background: none;
+    color: #e88f1c;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.icons:active{
+    color: #935b12;
+}

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "GreatLeader";
+    src:
+      url("/Fonts/GreatLeader/GreatLeader") format("ttf"),
+  }
+
+* {
+	font-family: "GreatLeader";
+}
+
+#whyP, #welcometexth, #offeringh {
+	position: relative;
+	white-space: nowrap;
+}
+
+#whyP h2, #welcometexth h2, #offeringh h2{
+	color: #f3ebe0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+#whyP h2{
+	font-size: 100px;
+}
+
+#welcometexth h2, #offeringh h2{
+	font-size: 150px;
+}
+
+#whyP h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 1px #f3ebe0;
+}
+
+#welcometexth h2:nth-child(1), #offeringh h2:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 2.5px #f3ebe0;
+}
+
+#whyP h2:nth-child(2), #welcometexth h2:nth-child(2), #offeringh h2:nth-child(2) {
+	color: #f3ebe0;
+	animation: animate 2s ease-in-out infinite;
+	-webkit-animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}

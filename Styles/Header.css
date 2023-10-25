@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "GreatLeader";
+    src:
+      url("/Fonts/GreatLeader/GreatLeader") format("ttf"),
+  }
+
+  @font-face {
+    font-family: "GreatLeaderLight";
+    src:
+      url("/Fonts/GreatLeader/GreatLeaderLight.ttf") format("ttf"),
+  }
+
+  @font-face {
+    font-family: "GreatLeaderHollow";
+    src:
+      url("/Fonts/GreatLeader/GreatLeaderHollow.ttf") format("ttf"),
+  }
+
+@font-face {
+    font-family: "Brothery";
+    src:
+        url("/Fonts/Brothery/Brothery.ttf") format("ttf")
+    }
+
+    #warb11{
+        width: 105%;
+        position: relative;
+        right: 75px;
+    }
+
+    #header {
+        height: 110px;
+        width: 101%;
+        display: flex;
+        flex-direction: row;
+        background-color: #181a20;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative;
+        bottom: 10px;
+        right: 9px;
+    }
+
+    #Logo{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 10px;
+    }
+
+    #LogoText{
+        font-family: "Brothery";
+        font-size: 52px;
+        position: relative;
+        bottom: 35px;
+        left: 15px;
+        color: #e88f1c;
+    }
+
+    .beer-ser{
+        color: #e88f1c;
+        font-family: "Brothery";
+        font-size: 32px;
+        background: none;
+        border: 1px solid #e88f1c;
+        border-radius: 28px;
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        -ms-border-radius: 28px;
+        -o-border-radius: 28px;
+        position: relative;
+        left: 200px;
+        top: 30px;
+        padding: 5px 5px;
+    }
+
+    #HeadButtons{
+        display: flex;
+        justify-content: end;
+    }
+
+    .headnut{
+        font-family: "Brothery";
+        color: #e88f1c;
+        height: 50px;
+        font-size: 32px;
+        border: none;
+        background: none;
+        position: relative;
+        left: 300px;
+        margin-left: 15px;
+        top: 30px;
+        cursor: pointer;
+    }
+
+    #headbasket, #headper{
+        color: #e88f1c;
+        font-size: 32px;
+        border: 2px solid #e88f1c;
+        border-radius: 12px;
+        border-bottom: 10px;
+        padding: 10px 10px;
+        background: none;
+        border: none;
+        position: relative;
+        left: 350px;
+        margin-left: 10px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .headnut:hover {
+        text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    }
+
+    #headper:hover {
+        text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    }
+
+    #headbasket:hover {
+        text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    }
+
+    #warb1{
+        width: 100%;
+        size: 105% 100%;
+        position: relative;
+        padding: 0;
+        bottom: 100px;
+        z-index: -1;
+    }
