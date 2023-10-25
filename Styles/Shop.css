@@ -1,0 +1,32 @@
+#SearchDiv{
+    background-color: #181a20;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 25%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#searchInput{
+    border: 2px solid #e88f1c;
+    background-color: #181a20;
+    padding: 15px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 34px;
+    color: #e88f1c;
+    width: 60%;
+}
+
+#Shop{
+    display: none;
+}

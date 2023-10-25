@@ -57,23 +57,6 @@
         color: #e88f1c;
     }
 
-    .beer-ser{
-        color: #e88f1c;
-        font-family: "Brothery";
-        font-size: 32px;
-        background: none;
-        border: 1px solid #e88f1c;
-        -webkit-border-radius: 28px;
-        -moz-border-radius: 28px;
-        -ms-border-radius: 28px;
-        -o-border-radius: 28px;
-        border-radius: 28px;
-        position: relative;
-        left: 200px;
-        top: 30px;
-        padding: 5px 5px;
-    }
-
     #HeadButtons{
         display: flex;
         justify-content: end;
@@ -87,7 +70,7 @@
         border: none;
         background: none;
         position: relative;
-        left: 300px;
+        left: 700px;
         margin-left: 15px;
         top: 30px;
         cursor: pointer;
@@ -102,7 +85,7 @@
         background: none;
         border: none;
         position: relative;
-        left: 400px;
+        left: 750px;
         margin-left: 10px;
         -webkit-border-radius: 12px;
         -moz-border-radius: 12px;
@@ -112,16 +95,12 @@
         cursor: pointer;
     }
 
-    .headnut:hover {
-        text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    .headnut:hover, #headbasket:hover{
+        text-shadow: -2px -2px 0 #f3ebe0, 2px -2px 0 #f3ebe0, -2px 2px 0 #f3ebe0, 2px 2px 0 #f3ebe0;
     }
 
-    #headper:hover {
-        text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
-    }
-
-    #headbasket:hover {
-        text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    .headnut:active, #headbasket:active{
+        color: #c57b1a;
     }
 
     #warb1{
