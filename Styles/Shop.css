@@ -1,16 +1,9 @@
 #SearchDiv{
-    background-color: #181a20;
-    padding: 30px;
-    width: 50%;
+    width: 95%;
     display: flex;
-    justify-content: left;
-    position: relative;
-    left: 25%;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
+    position: right;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 #searchInput{
@@ -25,8 +18,76 @@
     font-size: 34px;
     color: #e88f1c;
     width: 60%;
+    position: relative;
+    left: 20px;
 }
 
 #Shop{
-    display: none;
+    display: block;
+}
+
+.beer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beer-item {
+    border: 3px solid #e88f1c;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: calc(17% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #181a20;
+    color: #e88f1c;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.beer-item img {
+    max-width: 90px;
+    margin: auto auto;
+}
+
+.beer-item p {
+font-size: 20px;
+margin-top: 50px;
+
+}
+
+.beer-button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0; /* Додати внутрішній відступ знизу */
+    cursor: pointer;
+}
+
+.beer-item:hover {
+    background-color: #f3ebe0; /* Колір фону при наведенні */
+}
+
+#prenext{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pages{
+    margin: 20px;
+    color: #181a20;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
 }

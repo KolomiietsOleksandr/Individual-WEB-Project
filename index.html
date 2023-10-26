@@ -20,9 +20,9 @@
 
         </div>
         <div id="HeadButtons">
-            <button class="headnut">Home</button>
-            <button class="headnut">Shop</button>
-            <button class="headnut">Gallery</button>
+            <button class="headnut" onclick="toggleDisplay('Homepages', ['Shop'])">Home</button>
+            <button class="headnut" onclick="toggleDisplay('Shop', ['Homepages'])">Shop</button>
+            <button class="headnut">Brawery</button>
 
             <button id="headbasket"><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
@@ -88,6 +88,14 @@
         <div id="SearchDiv">
             <input type="text" id="searchInput" placeholder="Search">
         </div>
+
+        <div class="beer-row" id="beer-container"></div>
+
+        <div id="prenext">
+            <button class="pages" onclick="previousPage()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+            <p class="pages" id="number">1</p>
+            <button class="pages" onclick="nextPage()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+        </div>
     </div>
 
     <footer id="footer">
@@ -111,8 +119,11 @@
             <button class="flood-text">Terms</button>
             <button class="flood-text">Security</button>
             <button class="flood-text">Sertifications</button>
-            <button class="flood-text">About us</button>
+            <button class="flood-text" onclick="toggleDisplay('Homepages', ['Shop'])">About us</button>
         </div>
     </footer>
+
+    <script src="Scripts/BeerFetcher.js"></script>
+    <script src="Scripts/Scripts.js"></script>
 </body>
 </html
