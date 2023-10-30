@@ -87,6 +87,21 @@
     <div id="Shop">
         <div id="SearchDiv">
             <input type="text" id="searchInput" placeholder="Search">
+
+            <div id="ABVsort">
+                <label for="abv-select">ABV:</label>
+                <select id="abv-select">
+                    <option value="none">All</option>
+                    <option value="0-4.5">0%-4.5%</option>
+                    <option value="4.6-7.5">4.6%-7.5%</option>
+                    <option value="7.6-50">7.6%-50%</option>
+                </select>
+            </div>
+
+            <div id="FavouriteButtonDiv">
+                <label for="favCheckbox">Favourites</label>
+                <input type="checkbox" id="favCheckbox" onchange="toggleFavoritesView()">
+            </div>
         </div>
 
         <div class="beer-row" id="beer-container"></div>
@@ -95,6 +110,10 @@
             <button class="pages" onclick="previousPage()"><i class="fa-solid fa-circle-chevron-left"></i></button>
             <p class="pages" id="number">1</p>
             <button class="pages" onclick="nextPage()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+        </div>
+
+        <div id="message">
+            <p id="messageText"><i class="fa-solid fa-beer-mug-empty"></i> Opps... No favourite beers <i class="fa-solid fa-beer-mug-empty"></i></p>
         </div>
     </div>
 
