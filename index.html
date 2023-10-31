@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Styles/Footer.css">
     <link rel="stylesheet" href="Styles/TitleAnim.css">
     <link rel="stylesheet" href="Styles/Shop.css">
+    <link rel="stylesheet" href="Styles/BeerInfo.css">
     <script src="https://kit.fontawesome.com/77ecbc8fc5.js" crossorigin="anonymous"></script>
     <title>Beer</title>
 </head>
@@ -22,7 +23,6 @@
         <div id="HeadButtons">
             <button class="headnut" onclick="toggleDisplay('Homepages', ['Shop'])">Home</button>
             <button class="headnut" onclick="toggleDisplay('Shop', ['Homepages'])">Shop</button>
-            <button class="headnut">Brawery</button>
 
             <button id="headbasket"><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
@@ -117,6 +117,20 @@
         </div>
     </div>
 
+    <div id="Info">
+        <div id="beer-details" class="beer-details-container">
+            <img id="beer-image" src="" alt="Beer">
+            <button id="button-back"><i class="fa-solid fa-backward"></i> Back</button>
+            <h2 id="beer-name"></h2>
+            <p id="beer-abv"></p>
+            <p id="beer-ibu"></p>
+            <p id="beer-description"></p>
+            <p id="beer-food-pairing"></p>
+            <p id="beer-price"></p>
+            <button id="beer-price-button">Buy</button>
+        </div>
+    </div>
+
     <footer id="footer">
         <div id="MapDiv">
             <p id="OurLocation">Our location</p>
@@ -142,6 +156,7 @@
         </div>
     </footer>
 
+    <script src="Scripts/BeerIndividualScript.js"></script>
     <script src="Scripts/BeerFetcher.js"></script>
     <script src="Scripts/Scripts.js"></script>
 </body>

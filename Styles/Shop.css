@@ -41,7 +41,7 @@
 }
 
 #Shop{
-    display: none;
+    display: block;
 }
 
 .beer-row {
@@ -91,9 +91,11 @@
 
 .ABV{
     position: relative;
-    bottom: 150px;
-    right: 0px;
+    bottom: 120px;
+    right: 60px;
     width: 100px;
+    margin: 0 0;
+    margin-right: 0px;
 }
 
 .beer-button {
@@ -180,4 +182,20 @@
     position: relative;
     left: 34%;
 
+}
+
+.priceBeer{
+    position: relative;
+    bottom: 120px;
+    left: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+.infoShortBeer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
 }

@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "GreatLeaderLight";
+    src:
+      url("/Fonts/GreatLeader/GreatLeaderLight.ttf") format("ttf"),
+  }
+
+#Info{
+    display: none;
+    background-color: #181a20;
+    -o-border-radius: 50px;
+    width: 101%;
+    height: 800px;
+    position: relative;
+    right: 8px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#beer-details{
+    color: #e88f1c;
+}
+
+#beer-image{
+    width: 200px;
+    height: 700px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#beer-name{
+    color: #f3ebe0;
+    position: relative;
+    left: 350px;
+    bottom: 700px;
+    font-size: 54px;
+    width: 400px;
+}
+
+#beer-abv{
+    position: relative;
+    width: 200px;
+    left: 350px;
+    bottom: 700px;
+    font-size: 32px;
+}
+
+#beer-ibu{
+    position: relative;
+    width: 200px;
+    left: 550px;
+    bottom: 770px;
+    font-size: 32px;
+}
+
+#beer-description{
+    position: relative;
+    width: 1000px;
+    margin: 0;
+    left: 350px;
+    bottom: 730px;
+    font-size: 32px;
+    font-family: "GreatLeaderLight";
+}
+
+#beer-food-pairing{
+    position: relative;
+    width: 1000px;
+    margin: 0;
+    font-size: 32px;
+    left: 350px;
+    bottom: 700px;
+}
+
+#beer-price{
+    position: relative;
+    width: 250px;
+    font-size: 54px;
+    left: 350px;
+    bottom: 700px;
+}
+
+#beer-price-button{
+    position: relative;
+    left: 550px;
+    bottom: 820px;
+    font-size: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid #f3ebe0;
+    color: #f3ebe0;
+    background-color: #181a20;
+    -o-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#beer-price-button:active{
+    color: #8c8780;
+    border: 2px solid #8c8780;
+}
+
+#button-back{
+    color: #e88f1c;
+    font-size: 32px;
+    position: relative;
+    left: 1000px;
+    bottom: 600px;
+    background: none;
+    border: none;
+}
+
+#button-back:active{
+    color: #71460d;
+}

@@ -59,6 +59,8 @@ function fetchBeers(page) {
                     }
                     localStorage.setItem('favoriteBeers', JSON.stringify(favoriteBeers));
                 });
+                const randomPrice = (Math.random() * 10 + 1).toFixed(2);
+                beer.price = randomPrice;
 
                 const nameElement = document.createElement('h2');
                 nameElement.textContent = beer.name;
@@ -69,15 +71,25 @@ function fetchBeers(page) {
                 const taglineElement = document.createElement('p');
                 taglineElement.textContent = beer.tagline;
 
+                const infoElement = document.createElement("div");
+                infoElement.className = "infoShortBeer";
+
                 const abvElement = document.createElement('p');
                 abvElement.textContent = `ABV: ${beer.abv}%`;
                 abvElement.className = 'ABV';
+
+                const priceElement = document.createElement("p");
+                priceElement.textContent = randomPrice + "$";
+                priceElement.className = "priceBeer";
+
 
                 beerElement.appendChild(favoriteButton);
                 beerElement.appendChild(nameElement);
                 beerElement.appendChild(imageElement);
                 beerElement.appendChild(taglineElement);
-                beerElement.appendChild(abvElement);
+                infoElement.appendChild(abvElement);
+                infoElement.appendChild(priceElement);
+                beerElement.appendChild(infoElement);
                 beerContainer.appendChild(beerElement);
             });
         })
@@ -196,6 +208,8 @@ function displayFavoriteBeers() {
                             beerContainer.removeChild(beerElement);
                         }
                     });
+                    const randomPrice = (Math.random() * 10 + 1).toFixed(2);
+                    beer.price = randomPrice;
 
                     const nameElement = document.createElement('h2');
                     nameElement.textContent = beer[0].name;
@@ -206,15 +220,24 @@ function displayFavoriteBeers() {
                     const taglineElement = document.createElement('p');
                     taglineElement.textContent = beer[0].tagline;
 
+                    const infoElement = document.createElement("div");
+                    infoElement.className = "infoShortBeer";
+
                     const abvElement = document.createElement('p');
                     abvElement.textContent = `ABV: ${beer[0].abv}%`;
                     abvElement.className = 'ABV';
+
+                    const priceElement = document.createElement("p");
+                    priceElement.textContent = beer.price + "$";
+                    priceElement.className = "priceBeer";
 
                     beerElement.appendChild(favoriteButton);
                     beerElement.appendChild(nameElement);
                     beerElement.appendChild(imageElement);
                     beerElement.appendChild(taglineElement);
-                    beerElement.appendChild(abvElement);
+                    infoElement.appendChild(abvElement);
+                    infoElement.appendChild(priceElement);
+                    beerElement.appendChild(infoElement);
                     beerContainer.appendChild(beerElement);
                 })
                 .catch((error) => {
@@ -282,6 +305,8 @@ function displayFavoriteBeers() {
                             }
                             localStorage.setItem('favoriteBeers', JSON.stringify(favoriteBeers));
                         });
+                        const randomPrice = (Math.random() * 10 + 1).toFixed(2);
+                        beer.price = randomPrice;
 
                         const nameElement = document.createElement('h2');
                         nameElement.textContent = beer.name;
@@ -292,15 +317,24 @@ function displayFavoriteBeers() {
                         const taglineElement = document.createElement('p');
                         taglineElement.textContent = beer.tagline;
 
+                        const infoElement = document.createElement("div");
+                        infoElement.className = "infoShortBeer";
+
                         const abvElement = document.createElement('p');
                         abvElement.textContent = `ABV: ${beer.abv}%`;
                         abvElement.className = 'ABV';
+
+                        const priceElement = document.createElement("p");
+                        priceElement.textContent = beer.price + "$";
+                        priceElement.className = "priceBeer";
 
                         beerElement.appendChild(favoriteButton);
                         beerElement.appendChild(nameElement);
                         beerElement.appendChild(imageElement);
                         beerElement.appendChild(taglineElement);
-                        beerElement.appendChild(abvElement);
+                        infoElement.appendChild(abvElement);
+                        infoElement.appendChild(priceElement);
+                        beerElement.appendChild(infoElement);
                         beerContainer.appendChild(beerElement);
                     });
                 }
