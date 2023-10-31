@@ -41,7 +41,7 @@
 }
 
 #Shop{
-    display: block;
+    display: none;
 }
 
 .beer-row {
@@ -172,4 +172,12 @@
     justify-self: center;
     display: none;
     place-items: center;
+}
+
+.noResultsElement{
+    font-size: 54px;
+    margin: 100px;
+    position: relative;
+    left: 34%;
+
 }
