@@ -64,12 +64,15 @@ function fetchBeers(page) {
 
                 const nameElement = document.createElement('h2');
                 nameElement.textContent = beer.name;
+                nameElement.className = "name-h2";
 
                 const imageElement = document.createElement('img');
                 imageElement.src = beer.image_url;
+                imageElement.className = "img-img";
 
                 const taglineElement = document.createElement('p');
                 taglineElement.textContent = beer.tagline;
+                taglineElement.className = "tagline-p";
 
                 const infoElement = document.createElement("div");
                 infoElement.className = "infoShortBeer";
@@ -213,12 +216,15 @@ function displayFavoriteBeers() {
 
                     const nameElement = document.createElement('h2');
                     nameElement.textContent = beer[0].name;
+                    nameElement.className = 'name-h2';
 
                     const imageElement = document.createElement('img');
                     imageElement.src = beer[0].image_url;
+                    imageElement.className = 'img-img';
 
                     const taglineElement = document.createElement('p');
                     taglineElement.textContent = beer[0].tagline;
+                    taglineElement.className = 'tagline-p';
 
                     const infoElement = document.createElement("div");
                     infoElement.className = "infoShortBeer";
@@ -310,12 +316,15 @@ function displayFavoriteBeers() {
 
                         const nameElement = document.createElement('h2');
                         nameElement.textContent = beer.name;
+                        nameElement.className = "name-h2";
 
                         const imageElement = document.createElement('img');
                         imageElement.src = beer.image_url;
+                        imageElement.className = "img-img";
 
                         const taglineElement = document.createElement('p');
                         taglineElement.textContent = beer.tagline;
+                        taglineElement.className = "tagline-p";
 
                         const infoElement = document.createElement("div");
                         infoElement.className = "infoShortBeer";
@@ -325,8 +334,8 @@ function displayFavoriteBeers() {
                         abvElement.className = 'ABV';
 
                         const priceElement = document.createElement("p");
-                        priceElement.textContent = beer.price + "$";
-                        priceElement.className = "priceBeer";
+                        priceElement.textContent = randomPrice + "$";
+                        priceElement.className = "priceBeer"
 
                         beerElement.appendChild(favoriteButton);
                         beerElement.appendChild(nameElement);

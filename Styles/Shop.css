@@ -7,7 +7,7 @@
 }
 
 #searchInput{
-    border: 2px solid #e88f1c;
+    border: 5px solid #f3ebe0;
     background-color: #181a20;
     padding: 15px;
     -webkit-border-radius: 50px;
@@ -23,14 +23,14 @@
 }
 
 #ABVsort{
-    border: 2px solid #e88f1c;
+    border: 5px solid #f3ebe0;
     background-color: #181a20;
     padding: 15px;
     border-radius: 50px;
     font-size: 34px;
     color: #e88f1c;
     position: relative;
-    left: 30px;
+    left: 210px;
 }
 
 #abv-select{
@@ -50,7 +50,7 @@
 }
 
 .beer-item {
-    border: 3px solid #e88f1c;
+    border: 5px solid #f3ebe0;
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -132,14 +132,14 @@
 #FavouriteButtonDiv{
     background-color: #181a20;
     color: #e88f1c;
-    border: 2px solid #e88f1c;
-    border-radius: 50px;
+    border: 5px solid #f3ebe0;
+    -o-border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 50px;
     position: relative;
-    left: 40px;
+    left: 220px;
     width: 200px;
 }
 

@@ -9,10 +9,12 @@ const beerPairingElement = document.getElementById("beer-food-pairing");
 const beerPriceElement = document.getElementById("beer-price");
 
 beerContainerIn.addEventListener('click', (event) => {
-    const clickedBeerElement = event.target.closest('.beer-item');
+    const clickedBeerElement = event.target.closest('.name-h2, .img-img, .tagline-p');
     if (clickedBeerElement) {
-        const beerNameH2 = clickedBeerElement.querySelector('h2');
+        const beerNameH2 = clickedBeerElement.parentElement.querySelector('.name-h2');
+        console.log(beerNameH2);
         const beerName = beerNameH2.textContent.replace(/ /g, "_");
+        console.log(beerNameH2);
 
         const ShopContainer = document.getElementById("Shop");
         const InfoContainer = document.getElementById("Info");
@@ -52,3 +54,15 @@ beerContainerIn.addEventListener('click', (event) => {
         ShopContainer.style.display = "Block";
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buyButton = document.querySelector('#beer-price-button');
+    if (buyButton) {console.log("1");}
+    buyButton.addEventListener('click', () => {
+        const name = document.getElementById("beer-name").textContent.replace(/ /g, "_");
+        const shoppingCart = window.shoppingCart;
+
+        shoppingCart.push(name);
+        console.log(shoppingCart);
+    });
+});

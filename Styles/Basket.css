@@ -1,0 +1,76 @@
+#basket-div{
+    background-color: #181a20;
+    width: 101%;
+    position: relative;
+    right: 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.beer-in-cart{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 2px solid #e88f1c;
+    width: 100%;
+    gap: 30px;
+}
+
+.img-cart{
+    width: 30px;
+    margin: 20px;
+    position: relative;
+    left: 20px;
+}
+
+.name-cart{
+    color: #f3ebe0;
+    font-size: 30px;
+    position: relative;
+    left: 150px;
+    width: 1200px;
+}
+
+.price-in-cart{
+    color: #e88f1c;
+    font-size: 30px;
+}
+
+.quantity-input{
+    color: #e88f1c;
+    background: none;
+    border: 1px solid #e88f1c;
+    -o-border-radius: 50px;
+    font-size: 30px;
+    width: 100px;
+    padding: 20px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.remove-button{
+    color: #e88f1c;
+    cursor: pointer;
+    margin: 0;
+    float: right;
+    background: none;
+    border: none;
+    font-size: 30px;
+    position: relative;
+    right: 10px;
+}
+
+.message-cart{
+    font-size: 54px;
+    margin: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

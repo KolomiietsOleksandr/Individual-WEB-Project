@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Styles/TitleAnim.css">
     <link rel="stylesheet" href="Styles/Shop.css">
     <link rel="stylesheet" href="Styles/BeerInfo.css">
+    <link rel="stylesheet" href="Styles/Basket.css">
     <script src="https://kit.fontawesome.com/77ecbc8fc5.js" crossorigin="anonymous"></script>
     <title>Beer</title>
 </head>
@@ -21,10 +22,10 @@
 
         </div>
         <div id="HeadButtons">
-            <button class="headnut" onclick="toggleDisplay('Homepages', ['Shop'])">Home</button>
-            <button class="headnut" onclick="toggleDisplay('Shop', ['Homepages'])">Shop</button>
+            <button class="headnut" onclick="toggleDisplay('Homepages', ['Shop','Info','Basket'])">Home</button>
+            <button class="headnut" onclick="toggleDisplay('Shop', ['Homepages','Info','Basket'])">Shop</button>
 
-            <button id="headbasket"><i class="fa-solid fa-basket-shopping"></i></button>
+            <button id="headbasket" onclick="displayCart()"><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
     </header>
 
@@ -131,6 +132,10 @@
         </div>
     </div>
 
+    <div id="Basket">
+        <div id="basket-div"></div>
+    </div>
+
     <footer id="footer">
         <div id="MapDiv">
             <p id="OurLocation">Our location</p>
@@ -156,6 +161,7 @@
         </div>
     </footer>
 
+    <script src="Scripts/Basket.js"></script>
     <script src="Scripts/BeerIndividualScript.js"></script>
     <script src="Scripts/BeerFetcher.js"></script>
     <script src="Scripts/Scripts.js"></script>

@@ -16,8 +16,9 @@
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     border-radius: 50px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 105px;
+    margin-bottom: 105px;
+    border: 5px solid #f3ebe0;
 }
 
 #beer-details{
@@ -99,6 +100,7 @@
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 #beer-price-button:active{
@@ -114,6 +116,7 @@
     bottom: 600px;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 #button-back:active{

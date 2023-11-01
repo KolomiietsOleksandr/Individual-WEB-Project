@@ -39,6 +39,7 @@
         position: relative;
         bottom: 10px;
         right: 9px;
+        border-bottom: 5px solid #f3ebe0;
     }
 
     #Logo{
