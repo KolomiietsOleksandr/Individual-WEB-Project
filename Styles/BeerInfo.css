@@ -92,15 +92,31 @@
     font-size: 54px;
     padding-left: 30px;
     padding-right: 30px;
-    border: 2px solid #f3ebe0;
+    border-top: 2px solid #f3ebe0;
+    border-bottom:2px solid #f3ebe0;
+    border-right:2px solid #f3ebe0;
+    border-left:none;
     color: #f3ebe0;
     background-color: #181a20;
-    -o-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    border-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     cursor: pointer;
+}
+
+#count{
+    background: none ;
+    color: #f3ebe0;
+    position: relative;
+    border-top: 2px solid #f3ebe0;
+    border-bottom:2px solid #f3ebe0;
+    border-left:2px solid #f3ebe0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 20px;
+    border-right:none;
+    font-size: 54px;
+    bottom: 820px;
+    left: 555px;
 }
 
 #beer-price-button:active{
@@ -115,8 +131,8 @@
     left: 1000px;
     bottom: 600px;
     background: none;
-    border: none;
     cursor: pointer;
+    border: none;
 }
 
 #button-back:active{

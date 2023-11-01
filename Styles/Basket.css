@@ -8,6 +8,8 @@
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .beer-in-cart{
@@ -37,20 +39,18 @@
 .price-in-cart{
     color: #e88f1c;
     font-size: 30px;
+    position: relative;
+    right: 50px;
 }
 
-.quantity-input{
+.quantity{
     color: #e88f1c;
     background: none;
-    border: 1px solid #e88f1c;
-    -o-border-radius: 50px;
     font-size: 30px;
     width: 100px;
     padding: 20px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    border-radius: 50px;
+    position: relative;
+    right: 50px;
 }
 
 .remove-button{
@@ -62,7 +62,7 @@
     border: none;
     font-size: 30px;
     position: relative;
-    right: 10px;
+    right: 50px;
 }
 
 .message-cart{
@@ -73,4 +73,40 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.confirm{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #e88f1c;
+    font-size: 40px;
+    border-bottom: 2px solid #e88f1c;
+}
+
+.totalPrice{
+    position: relative;
+    left: 20px;
+    width: 300px;
+}
+
+.orderButton{
+    border:none;
+    background: none;
+    color: #e88f1c;
+    height: 80px;
+    top: 45px;
+    position: relative;
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+    left: 1050px;
+}
+
+.orderButton:hover{
+    color:#f3ebe0;
+}
+
+.orderButton:active{
+    color: #8c8780;
 }

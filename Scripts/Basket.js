@@ -2,109 +2,117 @@ window.shoppingCart = [];
 const cartContainer = document.getElementById("basket-div");
 
 function displayCart() {
-    cartContainer.innerHTML = '';
-    const shop = document.getElementById("Shop");
-    const home = document.getElementById("Homepages");
-    const basket = document.getElementById("Basket");
-    const info = document.getElementById("Info");
-    shop.style.display = "none";
-    home.style.display = "none";
-    info.style.display = "none";
-    basket.style.display = "block";
+  cartContainer.innerHTML = '';
+  const shop = document.getElementById("Shop");
+  const home = document.getElementById("Homepages");
+  const basket = document.getElementById("Basket");
+  const info = document.getElementById("Info");
+  shop.style.display = "none";
+  home.style.display = "none";
+  info.style.display = "none";
+  basket.style.display = "block";
 
-    if (shoppingCart.length > 0) {
-        shoppingCart.forEach((beerName) => {
-            fetch(`https://api.punkapi.com/v2/beers?beer_name=${beerName}`)
-                .then((response) => response.json())
-                .then((beers) => {
-                    const beer = beers[0];
+  const beersPricesArr = [];
 
-                    const existingMessage = document.querySelector(".message-cart");
-                    if (existingMessage) {
-                        existingMessage.remove();
-                    }
+  if (shoppingCart.length > 0) {
+    cartContainer.style.borderTop = '5px solid #f3ebe0';
+    cartContainer.style.borderBottom = '5px solid #f3ebe0';
 
-                    if (beer) {
-                        const randomPrice = (Math.random() * 10 + 1).toFixed(2);
-                        beer.price = randomPrice;
+    const confirm = document.createElement('div')
+    confirm.className = "confirm";
 
-                        const divElement = document.createElement("div");
-                        divElement.className = "beer-in-cart";
+    let total = 0;
+    const totalPrice = document.createElement("h2")
+    totalPrice.textContent = `Total: $`;
+    totalPrice.className = "totalPrice";
 
-                        const imageElement = document.createElement('img');
-                        imageElement.src = beer.image_url;
-                        imageElement.className = 'img-cart';
+    shoppingCart.forEach((beerName) => {
+      const [beerNamePart, countPart, priceBeer] = beerName.split("/");
+      const count = parseInt(countPart, 10);
+      const price = parseFloat(priceBeer).toFixed(2);
 
-                        const nameElement = document.createElement('p');
-                        nameElement.textContent = beer.name;
-                        nameElement.className = 'name-cart';
+      fetch(`https://api.punkapi.com/v2/beers?beer_name=${beerNamePart}`)
+        .then((response) => response.json())
+        .then((beers) => {
+          const beer = beers[0];
 
-                        const priceElement = document.createElement("p");
-                        priceElement.textContent = beer.price + '$';
-                        priceElement.className = "price-in-cart";
+          const existingMessage = document.querySelector(".message-cart");
+          if (existingMessage) {
+            existingMessage.remove();
+          }
 
-                        const quantityInput = document.createElement('input');
-                        quantityInput.type = 'text';
-                        quantityInput.value = 1;
-                        quantityInput.className = 'quantity-input';
-                        quantityInput.addEventListener('input', () => {
-                            const newQuantity = parseInt(quantityInput.value, 10);
-                            console.log("", newQuantity);
-                            if (isNaN(newQuantity)) {
-                                quantityInput.value = 1;
-                            }
-                            else{
-                                quantityInput.value = newQuantity;
-                            }
-                            priceElement.textContent = (Math.round(beer.price * quantityInput.value * 10) / 10) + "$";
-                        });
+          if (beer) {
+            beer.price = price * count;
 
-                        const removeButton = document.createElement('button');
-                        removeButton.textContent = 'Remove';
-                        removeButton.className = 'remove-button';
-                        removeButton.addEventListener('click', () => {
-                            const updatedCart = shoppingCart.filter(item => item.name == beer.name);
-                            shoppingCart = updatedCart;
-                            displayCart();
-                        });
+            const divElement = document.createElement("div");
+            divElement.className = "beer-in-cart";
 
-                        divElement.appendChild(imageElement);
-                        divElement.appendChild(nameElement);
-                        divElement.appendChild(priceElement);
-                        divElement.appendChild(quantityInput);
-                        divElement.appendChild(removeButton);
-                        cartContainer.appendChild(divElement);
-                    }
-                })
-                .catch((error) => {
-                    console.error('Error: ', error);
-                });
+            const imageElement = document.createElement('img');
+            imageElement.src = beer.image_url;
+            imageElement.className = 'img-cart';
+
+            const nameElement = document.createElement('p');
+            nameElement.textContent = beer.name;
+            nameElement.className = 'name-cart';
+
+            const priceElement = document.createElement("p");
+            priceElement.textContent = beer.price.toFixed(2) + '$';
+            priceElement.className = "price-in-cart";
+
+            const quantity = document.createElement('p');
+            quantity.className = 'quantity';
+            quantity.textContent = count;
+
+            total += beer.price;
+            totalPrice.innerHTML = "Total: " + total + "$";
+
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.className = 'remove-button';
+            removeButton.addEventListener('click', () => {
+              const beerIndex = shoppingCart.findIndex(item => item === beerName);
+              if (beerIndex !== -1) {
+                shoppingCart.splice(beerIndex, 1);
+                displayCart();
+              }
+            });
+
+            divElement.appendChild(imageElement);
+            divElement.appendChild(nameElement);
+            divElement.appendChild(priceElement);
+            divElement.appendChild(quantity);
+            divElement.appendChild(removeButton);
+            cartContainer.appendChild(divElement);
+
+            beersPricesArr.push(beer.price);
+            return beersPricesArr;
+          }
+        })
+        .catch((error) => {
+          console.error('Error: ', error);
         });
+    });
 
-        const confirm = document.createElement('div')
-        confirm.className = "confirm";
+    const orderButton = document.createElement("button")
+    orderButton.className = "orderButton";
+    orderButton.innerHTML = 'Comfirm order <i class="fa-solid fa-box-open"></i>';
 
-        const totalPrice = document.createElement("h2")
-        totalPrice.textContent = "Total:";
+    confirm.appendChild(totalPrice);
+    confirm.appendChild(orderButton);
+    cartContainer.appendChild(confirm);
+  } else {
+    const existingMessage = document.querySelector(".message-cart");
 
-        const orderButton = document.createElement("button")
-        orderButton.className = "orderButton";
-        orderButton.innerHTML = 'Comfirm order <i class="fa-solid fa-box-open"></i>';
+    if (!existingMessage) {
+      const message2 = document.createElement("p");
+      message2.innerHTML = '<i class="fa-solid fa-beer-mug-empty"></i>  Oops... Empty cart  <i class="fa-solid fa-beer-mug-empty"></i>';
+      message2.className = "message-cart";
 
-        confirm.appendChild(totalPrice);
-        confirm.appendChild(orderButton);
-        cartContainer.appendChild(confirm);
+      const Basket = document.getElementById("Basket");
+      Basket.appendChild(message2);
+
+      cartContainer.style.borderTop = 'none';
+      cartContainer.style.borderBottom = 'none';
     }
-    else {
-        const existingMessage = document.querySelector(".message-cart");
-
-        if (!existingMessage) {
-            const message2 = document.createElement("p");
-            message2.innerHTML = '<i class="fa-solid fa-beer-mug-empty"></i>  Oops... Empty cart  <i class="fa-solid fa-beer-mug-empty"></i>';
-            message2.className = "message-cart";
-
-            const Basket = document.getElementById("Basket");
-            Basket.appendChild(message2);
-        }
-    }
+  }
 }
