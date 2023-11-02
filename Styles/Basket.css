@@ -124,3 +124,9 @@
         left: 100px;
     }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .orderButton{
+        left: 350px;
+    }
+}

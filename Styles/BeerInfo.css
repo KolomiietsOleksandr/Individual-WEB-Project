@@ -179,4 +179,31 @@
     #beer-price-button, #count{
         bottom: 120px;
     }
+
+    #button-back{
+        left: 650px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    #beer-abv, #beer-ibu, #beer-description, #beer-food-pairing{
+        font-size: 24px;
+    }
+
+    #beer-description, #beer-food-pairing{
+        width: 500px;
+    }
+
+    #beer-ibu{
+        bottom: 750px;
+    }
+
+    #Info{
+        margin-bottom: 150px;
+    }
+
+    #button-back{
+        left: 550px;
+    }
 }

@@ -225,3 +225,37 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    #ABVsort{
+        left: 30px;
+        font-size: 40px;
+    }
+
+    #FavouriteButtonDiv{
+        left: 35px;
+        font-size: 40px;
+    }
+
+    #searchInput{
+        padding: 10px;
+        width: 50%;
+    }
+
+    .beer-item{
+        width: calc(25% - 20px);
+        margin: 25px;
+    }
+
+    #Shop{
+        margin-bottom: 0;
+    }
+
+    .beer-item h2{
+        width: 150px;
+    }
+
+    .favorite-button{
+        left: 180px;
+    }
+}

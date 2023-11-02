@@ -138,3 +138,49 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    #map{
+        width: 250px;
+        height: 450px;
+    }
+
+    #MapDiv{
+        width: 120px;
+    }
+
+    #OurLocation{
+        font-size: 32px;
+        width: 200px;
+    }
+
+    #Phones, #Adress, #Email{
+        color:#e88f1c;
+        font-size: 16px;
+        position: relative;
+        line-height: 50px;
+        letter-spacing: 0.1em;
+        bottom: 50px;
+        left: 300px;
+    }
+
+    #Icons{
+        font-size: 16px;
+        left: 330px;
+        bottom: 30px;
+    }
+
+    .flood-text{
+        width: 180px;
+        bottom: 60px;
+    }
+
+    #flood{
+        width: 180px;
+        left: 350px;
+    }
+
+    #footer{
+        width: 1024px;
+    }
+}

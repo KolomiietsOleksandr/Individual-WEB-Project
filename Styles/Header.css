@@ -139,3 +139,30 @@
             left: 44px;
         }
     }
+
+    @media screen and (max-width: 1024px) and (min-width: 769px) {
+        #Logo{
+            width: 70px;
+            height: 70px;
+        }
+
+        #LogoText{
+            font-size: 40px;
+            bottom: 22px;
+        }
+
+        #header{
+            width: 102%;
+            height: 100px;
+        }
+
+        #HeadButtons{
+            position: relative;
+            right: 550px;
+            bottom: 5px;
+        }
+
+        #warb1{
+            left: 44px;
+        }
+    }

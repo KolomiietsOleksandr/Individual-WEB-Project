@@ -99,3 +99,18 @@
 		-o-transform: translateX(-50%) translateY(-40%);
 }
 }
+
+
+@media screen and (max-width: 1024px){
+	#whyP h2{
+		white-space:normal;
+		font-size: 90px;
+		width: 600px;
+		text-align: center;
+		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-o-transform: translateX(-50%) translateY(-50%);
+}
+}
