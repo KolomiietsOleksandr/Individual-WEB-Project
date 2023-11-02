@@ -184,3 +184,9 @@
         width: 1024px;
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #map{
+        width: 400px;
+    }
+}

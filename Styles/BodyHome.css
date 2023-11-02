@@ -311,3 +311,23 @@
         top: 300px;
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #offimg{
+        position: absolute;
+        overflow: hidden;
+        width: 131.3%;
+        height:600px;
+        bottom: -100px;
+        z-index: 1;
+    }
+
+    #el1{
+        display: none;
+    }
+
+    #why{
+        width: 80%;
+        left: 150px;
+    }
+}

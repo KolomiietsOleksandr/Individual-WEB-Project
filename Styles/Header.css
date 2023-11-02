@@ -166,3 +166,14 @@
             left: 44px;
         }
     }
+
+    @media screen and (min-width: 1025px) and (max-width: 1440px){
+        #HeadButtons{
+            position: relative;
+            right: 250px;
+        }
+
+        #warb1{
+            left: 10px;
+        }
+    }

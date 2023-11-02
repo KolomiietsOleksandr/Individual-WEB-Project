@@ -259,3 +259,18 @@
         left: 180px;
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #ABVsort{
+        left: 100px;
+    }
+
+    #FavouriteButtonDiv{
+        left: 110px;
+    }
+
+    .beer-item{
+        width: calc(19% - 20px);
+        margin: 25px;
+    }
+}
