@@ -274,3 +274,21 @@
         margin: 25px;
     }
 }
+
+@media screen and (min-width: 1441px) and (max-width: 1680px){
+    .beer-item{
+        width: calc(15% - 20px);
+        margin: 25px;
+    }
+
+    .favorite-button{
+        left: 180px;
+    }
+
+    .beer-item h2{
+        width: 150px;
+        position: relative;
+        left: 30px;
+        bottom: 50px;
+    }
+}
