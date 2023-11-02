@@ -199,3 +199,29 @@
     position: relative;
     margin-top: 30px;
 }
+
+@media screen and (max-width: 768px){
+    #ABVsort{
+        left: 30px;
+        font-size: 40px;
+    }
+
+    #FavouriteButtonDiv{
+        left: 35px;
+        font-size: 40px;
+    }
+
+    #searchInput{
+        padding: 10px;
+        width: 50%;
+    }
+
+    .beer-item{
+        width: calc(40% - 20px);
+        margin: 20px;
+    }
+
+    #Shop{
+        margin-bottom: 0;
+    }
+}

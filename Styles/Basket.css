@@ -3,11 +3,11 @@
     width: 101%;
     position: relative;
     right: 10px;
-    border-radius: 50px;
+    -o-border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -109,4 +109,18 @@
 
 .orderButton:active{
     color: #8c8780;
+}
+
+@media screen and (max-width: 768px){
+    .name-cart{
+        left: 50px;
+    }
+
+    #basket-div{
+        width: 768px;
+    }
+
+    .orderButton{
+        left: 100px;
+    }
 }

@@ -23,6 +23,7 @@
 
 #beer-details{
     color: #e88f1c;
+    position: relative;
 }
 
 #beer-image{
@@ -137,4 +138,45 @@
 
 #button-back:active{
     color: #71460d;
+}
+
+@media screen and (max-width: 768px){
+    #beer-image{
+        width: 100px;
+        height: 400px;
+        left: 100px;
+        bottom: 250px;
+        position: absolute;
+    }
+
+    #beer-name{
+        font-size: 30px;
+        bottom: 0;
+    }
+
+    #beer-abv, #beer-ibu, #beer-description, #beer-food-pairing{
+        font-size: 20px;
+        bottom: 0px;
+    }
+
+    #beer-ibu{
+        bottom: 40px;
+    }
+
+    #beer-description, #beer-food-pairing{
+        width: 300px;
+    }
+
+    .beer-details-container{
+        right: 50px;
+        bottom: -50px;
+    }
+
+    #beer-price{
+        bottom: 0;
+    }
+
+    #beer-price-button, #count{
+        bottom: 120px;
+    }
 }

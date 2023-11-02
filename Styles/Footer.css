@@ -95,3 +95,46 @@
 .icons:active{
     color: #f3ebe0;
 }
+
+@media screen and (max-width: 768px){
+    #footer{
+        top: 120px;
+        width: 768px;
+        height: 500px;
+    }
+
+    #OurLocation{
+        font-size: 50px;
+    }
+
+    #map{
+        width: 300px;
+        height: 350px;
+    }
+
+    #Contacts{
+        bottom: 1000px;
+        right: 40px;
+    }
+
+    #Phones, #Adress, #Email{
+        color:#e88f1c;
+        font-size: 16px;
+        position: relative;
+        line-height: 50px;
+        letter-spacing: 0.1em;
+        bottom: 100px;
+    }
+
+    #MapDiv{
+        width: 310px;
+    }
+
+    #Icons{
+        bottom: 100px;
+    }
+
+    #flood{
+        display: none;
+    }
+}

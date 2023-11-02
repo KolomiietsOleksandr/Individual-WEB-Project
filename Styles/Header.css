@@ -112,3 +112,30 @@
         bottom: 100px;
         z-index: -1;
     }
+
+    @media screen and (max-width: 768px) {
+        #Logo{
+            width: 70px;
+            height: 70px;
+        }
+
+        #LogoText{
+            font-size: 40px;
+            bottom: 22px;
+        }
+
+        #header{
+            width: 102%;
+            height: 100px;
+        }
+
+        #HeadButtons{
+            position: relative;
+            right: 800px;
+            bottom: 5px;
+        }
+
+        #warb1{
+            left: 44px;
+        }
+    }

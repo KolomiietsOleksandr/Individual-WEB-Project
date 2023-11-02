@@ -17,6 +17,10 @@
 	color: #f3ebe0;
 	position: absolute;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 }
 #whyP h2{
 	font-size: 100px;
@@ -70,4 +74,28 @@
 			0% 100%
 		);
 	}
+}
+
+
+@media screen and (max-width: 768px){
+	#offeringh h2{
+		font-size: 100px;
+		transform: translateX(-75%) translateY(-30%);
+		-webkit-transform: translateX(-75%) translateY(-30%);
+		-moz-transform: translateX(-75%) translateY(-30%);
+		-ms-transform: translateX(-75%) translateY(-30%);
+		-o-transform: translateX(-75%) translateY(-30%);
+	}
+
+	#whyP h2{
+		white-space:normal;
+		font-size: 70px;
+		width: 500px;
+		text-align: center;
+		transform: translateX(-50%) translateY(-40%);
+		-webkit-transform: translateX(-50%) translateY(-40%);
+		-moz-transform: translateX(-50%) translateY(-40%);
+		-ms-transform: translateX(-50%) translateY(-40%);
+		-o-transform: translateX(-50%) translateY(-40%);
+}
 }

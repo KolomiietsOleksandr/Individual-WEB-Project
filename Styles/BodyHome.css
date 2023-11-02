@@ -53,6 +53,7 @@
     height: 100px;
     width: 50px;
     position: relative;
+    font-size: 20px;
     left: 320px;
     white-space: nowrap;
 }
@@ -199,4 +200,59 @@
     left: 50%;
     bottom: 20%;
     z-index: 1;
+}
+
+@media screen and (max-width: 768px){
+    #WelcomeDiv{
+        bottom: 80px;
+        height: 700px;
+    }
+
+    #welcometext{
+        font-size: 28px;
+        bottom: 25px;
+    }
+
+    #w1{
+        position: relative;
+        top: 350px;
+        border-bottom-right-radius: 50px;
+    }
+
+    #Offering{
+        top: 50px;
+        width: 768px;
+        right: 2.5px;
+        border: none;
+    }
+
+    #Offer1{
+        width: 768px;
+        border: none;
+    }
+
+    #offeringtext{
+        font-size: 34px;
+        width: 700px;
+        top: 50px;
+    }
+
+    #el1{
+        display: none;
+    }
+
+    #offimg{
+        display: none;
+    }
+
+    #why{
+        top: 100px;
+        left: 110px;
+        margin-bottom: 50px;
+        height: 1400px;
+    }
+
+    #whys{
+        top: 300px;
+    }
 }
