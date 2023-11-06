@@ -1,19 +1,19 @@
 @font-face {
     font-family: "GreatLeader";
     src:
-      url("/Fonts/GreatLeader/GreatLeader") format("ttf"),
+      url("https://fonts.cdnfonts.com/css/great-leader") format("ttf"),
   }
 
   @font-face {
     font-family: "GreatLeaderLight";
     src:
-      url("/Fonts/GreatLeader/GreatLeaderLight.ttf") format("ttf"),
+      url("https://fonts.cdnfonts.com/css/great-leader") format("ttf"),
   }
 
   @font-face {
     font-family: "GreatLeaderHollow";
     src:
-      url("/Fonts/GreatLeader/GreatLeaderHollow.ttf") format("ttf"),
+      url("https://fonts.cdnfonts.com/css/great-leader") format("ttf"),
   }
 
 @font-face {
