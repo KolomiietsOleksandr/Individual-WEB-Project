@@ -4,6 +4,8 @@
       url("/Fonts/GreatLeader/GreatLeaderLight.ttf") format("ttf"),
   }
 
+@import url('https://fonts.cdnfonts.com/css/great-leader');
+
 #Info{
     display: none;
     background-color: #181a20;

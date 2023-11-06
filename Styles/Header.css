@@ -22,6 +22,8 @@
         url("/Fonts/Brothery/Brothery.ttf") format("ttf")
     }
 
+    @import url('https://fonts.cdnfonts.com/css/great-leader');
+
     #warb11{
         width: 105%;
         position: relative;

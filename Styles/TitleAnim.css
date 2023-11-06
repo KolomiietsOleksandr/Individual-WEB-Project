@@ -4,6 +4,8 @@
       url("/Fonts/GreatLeader/GreatLeader") format("ttf"),
   }
 
+  @import url('https://fonts.cdnfonts.com/css/great-leader');
+
 * {
 	font-family: "GreatLeader";
 }
